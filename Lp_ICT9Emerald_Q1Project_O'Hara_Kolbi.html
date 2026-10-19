@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1 Project</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: #FFF9D6;
+      color: #343a2b;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8EA66B;
+      color: white;
+      padding: 16px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #f4efc9;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      background-color: #8EA66B;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    h3,
+    .highlight {
+      color: #617746;
+    }
+
+    .people,
+    .works {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .person-card,
+    .work-card,
+    .contact-card {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #d9dfc7;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px #00000012;
+    }
+
+    .work-image {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #617746;
+    }
+
+    .contact-card {
+      max-width: 560px;
+      margin: 18px auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #b9c49f;
+      border-radius: 5px;
+      font: inherit;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .choice {
+      display: inline-block;
+      margin-right: 12px;
+      font-weight: normal;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 16px;
+      padding: 11px;
+      background-color: #8EA66B;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #718653;
+    }
+
+    footer {
+      background-color: #8EA66B;
+      color: white;
+      text-align: center;
+      padding: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .people,
+      .works {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    <a class="logo" href="#home">Our Portfolio</a>
+
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#works">Our Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to <span class="highlight">Our Portfolio</span></h1>
+    <p>A shared portfolio featuring our introductions and ICT projects.</p>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+
+      <div class="people">
+        <div class="person-card">
+          <h3>Kolbi</h3>
+          <p>Hi! I'm Kolbi. I enjoy learning about technology and creating projects.</p>
+          <p><strong>Favorite subject:</strong> anyting </p>
+          <p><strong>Hobby:</strong> Baking and Sports ig </p>
+        </div>
+
+        <div class="person-card">
+          <h3>Erich</h3>
+          <p>Hi! I'm Erich. I like exploring new ideas and learning how websites are made.</p>
+          <p><strong>Favorite subject:</strong> Math </p>
+          <p><strong>Hobby:</strong> Drawing </p>
+        </div>
+      </div>
+
+      <h3>Our Goals</h3>
+      <ul>
+        <li>Improve our HTML and CSS skills</li>
+        <li>Create organized and creative web pages</li>
+      </ul>
+
+      <h3>Steps We Took</h3>
+      <ol>
+        <li>Planned the portfolio sections and colors</li>
+        <li>Created the HTML structure</li>
+        <li>Styled the page with CSS</li>
+      </ol>
+
+      <h3>Quick Facts</h3>
+      <dl>
+        <dt><strong>Class:</strong></dt>
+        <dd>ICT 9</dd>
+        <dt><strong>Project:</strong></dt>
+        <dd>First Quarter Portfolio</dd>
+      </dl>
+    </section>
+
+    <section id="works">
+      <h2>Our Works</h2>
+
+      <div class="works">
+        <div class="work-card">
+          <h3>Kolbi's Project 1</h3>
+          <img class="work-image"
+               src="img.png2.png"
+               alt="Preview of Kolbi's first project">
+          <ul>
+            <li>HTML & CSS Projects</li>
+            <li>HTML Forms</li>
+            <li>Movie Recommendations</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <h3>Kolbi's Project 2</h3>
+          <img class="work-image"
+               src="image_sw1.png"
+               alt="Preview of Kolbi's second project">
+          <ul>
+            <li>HTML & CSS Projects</li>
+            <li>Spotify Artist</li>
+            <li>List, Links and Images</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <h3>Erich's Project 1</h3>
+          <img class="work-image"
+               src= "image.png"
+               alt="Preview of Erich's first project">
+          <ul>
+            <li>HTML & CSS Projects</li>
+            <li>HTML Forms</li>
+            <li>Movie Recommendations</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <h3>Erich's Project 2</h3>
+          <img class="work-image"
+               src="image (2).png"
+               alt="Preview of Erich's second project">
+          <ul>
+            <li>HTML & CSS Projects</li>
+            <li>Spotify Artist</li>
+            <li>List, Links and Images</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-card">
+        <form action="#" method="post">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name"
+                 placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email"
+                 placeholder="Enter your email" required>
+
+          <label>Who would you like to contact?</label>
+          <label class="choice">
+            <input type="radio" name="contact-person" value="Kolbi"> Kolbi
+          </label>
+          <label class="choice">
+            <input type="radio" name="contact-person" value="Erich"> Erich
+          </label>
+          <label class="choice">
+            <input type="radio" name="contact-person" value="both"> Both
+          </label>
+
+          <label for="interest">Area of Interest</label>
+          <select id="interest" name="interest">
+            <option value="">Choose an interest</option>
+            <option value="web-design">Web Design</option>
+            <option value="coding">Coding</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="feedback">Any Feedback?</label>
+          <textarea id="feedback" name="feedback" rows="4"
+                    placeholder="Write your feedback here..."></textarea>
+
+          <button type="submit">Submit</button>
+          <p id="form-status" aria-live="polite" style="display:none; margin-top:12px; color:#617746; font-weight:bold;"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2026 Kolbi and Erich. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
